@@ -23,7 +23,13 @@ git push -u origin master	//首次推送 将origin推送至master
 ssh-keygen -t rsa -C '邮箱地址'  //本地生成SSH公钥与私钥
 ssh -T git@github.com			//进行匹配
 
-
+//新仓库创建之后配置示例：
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Shawyangg/NOTE.git
+git push -u origin main
 
 
 ```
